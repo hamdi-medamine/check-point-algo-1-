@@ -1,0 +1,35 @@
+ALGORITHM solution
+
+ VAR
+  numb_words,numb_vowels,nbr : INTEGER ;
+ phrase : string ;
+
+ BEGIN
+ write ('Entrez une phrase de votre choix: ')
+ read (phrase)
+ nbr:=phrase.length
+
+ numb_esp=0 
+ numb_words=0
+ FOR i FROM 0 TO nbr-1 STEP 1 DO
+
+     IF (phrase[i]=' ') THEN
+         numb_esp:= numb_esp + 1
+     END_IF
+     
+ END_FOR
+  numb_words:=numb-esp + 1
+
+ numb_vowels=0
+FOR i FROM 0 TO nbr-1 STEP 1  DO
+
+   IF (texte[i]='a' or texte[i]='e' or texte[i]='i' or texte[i]='o' or texte[i]='u' or texte[i]='y') THEN
+      numb_vowels:= numb_vowels + 1
+   END_IF
+
+END_FOR
+ write ('la longueur de votre phrase est',nbr,)
+ write ('votre phrase contient',numb_vowels,'voyels' )
+ write ('votre phrase contient',numb_words,'mots')
+
+
